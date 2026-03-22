@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0a0f1e;
+  --cyan: #00c8ff;
+  --text: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0f1e;
+  color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f1e;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 200, 255, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00c8ff;
+}
+
+/* Spinning ring animation */
+@keyframes spinRing {
+  to { transform: rotate(360deg); }
+}
+
+/* Background grid */
+.bg-grid {
+  background-image: 
+    linear-gradient(rgba(0,200,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,200,255,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Glow text */
+.glow-text {
+  text-shadow: 0 0 20px rgba(0,200,255,0.5);
+}
+
+/* Floating orbs */
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.15; }
+  50% { transform: translate(30px, -40px) scale(1.1); opacity: 0.25; }
+}
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.1; }
+  50% { transform: translate(-40px, 30px) scale(1.15); opacity: 0.2; }
+}
+
+.orb-1 {
+  animation: float1 8s ease-in-out infinite;
+}
+.orb-2 {
+  animation: float2 10s ease-in-out infinite;
+}
+.orb-3 {
+  animation: float1 12s ease-in-out infinite reverse;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease both;
+}
