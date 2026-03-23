@@ -119,27 +119,19 @@ export const skills = [
 export const frontendProjects = [
   {
     id: 1,
-    title: "Living Soft",
-    description: "App de búsqueda de alojamientos con sistema de ofertas/contraofertas, reservaciones y correos automatizados.",
-    image: "/assets/potf1.jpg",
-    url: "https://livinng.vercel.app/",
-    technologies: ["Node.js", "Express", "React", "PostgreSQL", "Prisma"],
+    title: "Rick & Morty Full Stack App",
+    description: "Aplicación Full Stack completa con API REST en Python/FastAPI, autenticación JWT, gestión de favoritos y personajes personalizados, integración con la Rick and Morty API externa. SPA con React que permite explorar personajes, gestionar favoritos y crear personajes propios con filtros avanzados.",
+    image: "/assets/image-2.png",
+    url: "https://rick-and-morty-client-iota.vercel.app/",
+    technologies: ["React", "TypeScript", "Vite", "Zustand", "Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "JWT", "Docker"],
   },
   {
     id: 2,
-    title: "Store E-commerce",
-    description: "E-commerce Full Stack con Angular, gestión completa de productos y panel de administración.",
-    image: "/assets/potf9.jpg",
-    url: "https://github.com/daelflodo/Store",
-    technologies: ["Angular", "Node.js", "Express", "PostgreSQL"],
-  },
-  {
-    id: 3,
-    title: "Foccus E-commerce",
-    description: "E-commerce para óptica con sistema de recetas, gestión de roles, notificaciones y administración de personal.",
-    image: "/assets/potf8.jpg",
-    url: "https://codepartners.com.co/",
-    technologies: ["NestJS", "React", "NextJS", "PostgreSQL", "MongoDB", "AWS S3"],
+    title: "PI Food – Proyecto Personal Integrador",
+    description: "Aplicación Full Stack de recetas de comida con búsqueda, filtros por dieta, ordenamiento y creación de recetas propias. Integración con Spoonacular API para obtener recetas externas.",
+    image: "/assets/image-1.png",
+    url: "https://pi-food-client.vercel.app/",
+    technologies: ["React", "Redux", "Redux Thunk", "React Router DOM", "Vite", "Node.js", "Express", "Sequelize", "PostgreSQL", "Spoonacular API", "CSS Modules"],
   },
 ];
 
